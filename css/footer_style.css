@@ -1,0 +1,76 @@
+/*footer section*/
+footer{
+    background-color: #1a1a1a;
+    color: aliceblue;
+    padding-left: 30px;
+    padding-bottom: 30px;   
+}
+.horizontal{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    color: #fff;
+}
+ .footer-h{
+    display: flex;
+    flex-direction: column;
+    color: #fff;
+}
+
+.footer-h>h3{
+    color: aliceblue;
+    font: 2em sans-serif;
+}
+.footer-h>li>a{
+    color: white;
+    text-decoration: none;
+    font: 20px sans-serif;
+}
+
+.footer-h>li{
+    list-style: "-> ";
+    font: 20px sans-serif;
+    margin-bottom: 15px;
+}
+
+.footer-h>p{
+    font: 20px sans-serif;
+}
+
+.label {
+    color: #d53509;
+}
+
+
+/* Social Media Section */
+.social-icons {
+    display: flex;
+    justify-content: center;
+    gap: 15px;
+    margin-top: 20px;
+}
+
+.social-icons a {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 40px;
+    height: 40px;
+    background-color: rgb(39, 115, 177); /* Red background for the circle */
+    color: #ffffff; /* White color for icons */
+    border-radius: 50%; /* Makes the icon circular */
+    font-size: 1.2rem;
+    text-decoration: none;
+    transition: background-color 0.3s;
+}
+
+.social-icons a:hover {
+    background-color: #2b7fc0; /* Darker red on hover */
+}
+
+@media(max-width: 768px) {
+    .horizontal{
+        display: flex;
+        flex-direction: column;
+    }
+}

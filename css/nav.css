@@ -1,0 +1,111 @@
+body{
+    font: 15px/1.5 Arial, Helvetica,sans-serif;
+    padding:0;
+    margin:0;
+    background-color: white;
+    color: #000;
+}
+
+.heading{
+    background-color: #3465f9;
+    color: aliceblue;
+    margin-top: 0;
+    text-align: center;
+    padding-top: 20px;
+    padding-bottom: 20px;
+}
+
+/* Navbar styling */
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 20px;
+    color: #300d7d;
+    background-color: white;
+    margin-top: -20px;
+}
+.logo>img {
+    width: auto;
+    height: 80px;
+}
+.navbar ul {
+    display: flex;
+    list-style: none;
+    font-weight: bold;
+}
+.navbar ul li {
+    margin-left: 20px;
+}
+.navbar ul li a {
+    color: #300d7d;
+    text-decoration: none;
+    font-size: 25px;
+}
+.active1{
+    border: 1px dotted grey;
+    padding: 15px 23px;
+    border-radius: 20px;
+}
+.navbar ul li a:hover{
+    background-color: #3465f9;
+    color: #fff;
+    padding: 23px 30px;
+    border-radius: 20px;
+}
+.menu-toggle {
+    display: none;
+    font-size: 24px;
+    cursor: pointer;
+}
+
+@media(max-width: 768px) {
+    .heading{
+        padding-top: 10px;
+        padding-bottom: 10px;
+    }
+    .navbar{
+        position: relative;
+        height: 60px;
+        z-index: 10;
+    }
+    .logo>img {
+        width: auto;
+        height: 60px;
+    }
+    .navbar ul {
+        display: none;
+        flex-direction: column;
+        width: 100%;
+        background-color: #fff;
+        color: #300d7d;
+        padding-top: 10px;
+        overflow-y: auto;
+        margin-top: 160px;
+        
+    }
+    .navbar ul.active{
+        display: flex;
+    }
+    .navbar ul li {
+        margin: 15px 0;
+        text-align: center;
+    }
+    .navbar ul li a {
+        color: #0d147d;
+        text-decoration: none;
+        font-size: 18px;
+    }
+    .navbar ul li a:hover{
+        background-color: #3465f9;
+        color: #fff;
+        padding: 18px;
+    }
+    .menu-toggle {
+        display: block;
+        top: 10px;
+        right: 20px;
+        position: absolute;
+    }
+}
+    
